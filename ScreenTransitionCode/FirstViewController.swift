@@ -15,19 +15,16 @@ class FirstViewController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        // Viewの背景色をCyanに設定する.
+        // Viewの背景色をBlueに設定する.
         self.view.backgroundColor = UIColor.blueColor()
-        //tabBarItemのアイコンをFeaturedに、タグを1と定義する.
+        //tabBarItemのアイコンをTopRated
         self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.TopRated, tag: 1)
-        
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "A-Display"
-        
         // addBtnを設置
         addBtn = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClick")
         self.navigationItem.rightBarButtonItem = addBtn

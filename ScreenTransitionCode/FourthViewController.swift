@@ -16,20 +16,14 @@ class FourthViewController: UIViewController {
         self.view.backgroundColor = UIColor.greenColor()
         
         let myBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "onClickBarButton:")
-        
-        
         // NavigationBarを取得する.
         self.navigationController?.navigationBar
-        
         // NavigationBarの表示する.
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-        
         // NavigationItemの取得する.
         self.navigationItem
-                
         // Barの左側に配置する.
         self.navigationItem.setLeftBarButtonItem(myBarButton, animated: true)
-        
         self.title = "B'-Display"
     }
     

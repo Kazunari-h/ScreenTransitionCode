@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         
-        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Tabに設定するViewControllerのインスタンスを生成.
@@ -28,9 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let myNavigationController: UINavigationController = UINavigationController(rootViewController: myFirstTab)
         // NavigationBarの表示する.
         myNavigationController.setNavigationBarHidden(false, animated: false)
-
         
-        // タブを要素に持つArrayの.を作成する.
+        // タブを要素に持つArrayを作成する
         let myTabs = NSArray(objects: myNavigationController, mySecondTab)
         // UITabControllerの作成する.
         myTabBarController = UITabBarController()
